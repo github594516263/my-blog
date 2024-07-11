@@ -1,0 +1,49 @@
+.VPHome {
+  // 自定义首页背景图
+  &::before {
+    // 图片来源：https://zhuanlan.zhihu.com/p/54060187
+    background-image: url(./assets/bg3.webp);
+    //background: rgba(255, 255, 255, 0.9) url("./assets/bg3.webp") no-repeat;
+    //opacity: 0.1;
+    // background-image: linear-gradient(
+    //     to top,
+    //     rgba(255, 255, 255, 0),
+    //     rgba(255, 255, 255, 0)
+    //   ),
+    //   url("./assets/bg3.webp");
+    //background-size: cover;
+    background-size: cover;
+  }
+  // 定义遮罩样式
+  background: radial-gradient(
+    ellipse,
+    rgba(var(--bg-gradient-home), 1) 0%,
+    rgba(var(--bg-gradient-home), 0) 0%
+  );
+  // background: radial-gradient(
+  //   ellipse,
+  //   rgba(var(--bg-gradient-home), 1) 0%,
+  //   rgb(12 163 226 / 75%) 100%
+  // );
+}
+
+// 样式 1
+// &::before {
+//   // 图片来源：https://zhuanlan.zhihu.com/p/54060187
+//   //background-image: url(./assets/bg3.webp);
+//   background: rgba(255, 255, 255, 0.9) url("./assets/bg7.webp") no-repeat;
+//   //opacity: 0.1;
+//   background-image: linear-gradient(
+//       to top,
+//       rgba(255, 255, 255, 0),
+//       rgba(255, 255, 255, 0.5)
+//     ),
+//     url("./assets/bg7.webp");
+//   background-size: cover;
+// }
+// // 定义遮罩样式
+// background: radial-gradient(
+//   ellipse,
+//   rgba(var(--bg-gradient-home), 1) 0%,
+//   rgba(var(--bg-gradient-home), 0) 0%
+// );
